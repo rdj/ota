@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--[if !IE]>--><html lang="en-US" xml:lang="en-US" xmlns="http://www.w3.org/1999/xhtml"><!--<![endif]-->
+<!--[if gt IE 8]><html lang="en-US" xml:lang="en-US" xmlns="http://www.w3.org/1999/xhtml""><![endif]-->
+<!--[if IE 8]><html lang="en-US" xml:lang="en-US" xmlns="http://www.w3.org/1999/xhtml" class="ie8"><![endif]-->
+<!--[if IE 7]><html lang="en-US" xml:lang="en-US" xmlns="http://www.w3.org/1999/xhtml" class="ie7"><![endif]-->
+<!--[if IE 6]><html lang="en-US" xml:lang="en-US" xmlns="http://www.w3.org/1999/xhtml" class="ie6"><![endif]-->
+<!--[if lt IE 6]><html lang="en-US" xml:lang="en-US" xmlns="http://www.w3.org/1999/xhtml""><![endif]-->
+  <head>
+    <title>OTA Ad Hoc Install - <%= config['dba'] %></title>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <meta content="no" http-equiv="imagetoolbar" />
+    <meta name="robots" content="noindex" />
+    <meta name="viewport" content="initial-scale = 1.0, user-scalable = no" />
+    <meta name="format-detection" content="telephone=no" />
+  </head>
+  <body>
+    <% apps.each do |app| %>
+      <h1><a href="itms-services://?action=download-manifest&amp;url=http%3A%2F%2F<%= config['host'] %>%2F<%= app['name'] %>.app.AdHoc.<%= app['version'] %>.plist">Install <%= app['name'] %> <%= app['version'] %></a></h1>
+    <% end %>
+  </body>
+</html>

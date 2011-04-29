@@ -1,0 +1,6 @@
+host: ota.example.com
+dba: Example Corp
+MyApp:
+  bundle: com.example.myapp
+MyOtherApp:
+  bundle: com.example.myotherapp
