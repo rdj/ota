@@ -31,6 +31,8 @@ apps.each do |app|
   end
 end
 
+apks = Dir[path_for('*.apk')].map { |f| File.basename( f ) }
+
 File.open( path_for( 'index.html' ), 'w' ) do |f|
-  f.print index_template.result( :config => config, :apps => apps )
+  f.print index_template.result( :config => config, :apps => apps, :android_apks => apks )
 end

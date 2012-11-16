@@ -15,6 +15,9 @@
     <meta name="format-detection" content="telephone=no" />
   </head>
   <body>
+    <% android_apks.each do |apk| %>
+      <h1><a href="http://<%= config['host'] %>/<%= apk %>">Android: <%= apk %></a></h1>
+    <% end %>
     <% apps.each do |app| %>
       <h1><a href="itms-services://?action=download-manifest&amp;url=http%3A%2F%2F<%= config['host'] %>%2F<%= app['name'] %>.app.AdHoc.<%= app['version'] %>.plist">Install <%= app['name'] %> <%= app['version'] %></a></h1>
     <% end %>
