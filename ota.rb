@@ -1,7 +1,9 @@
 #!/usr/bin/env ruby
 
 require 'rubygems'
-require 'erubis'
+require 'bundler'
+Bundler.require
+
 require 'yaml'
 
 def path_for( file )

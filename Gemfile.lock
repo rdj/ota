@@ -1,0 +1,12 @@
+GEM
+  remote: http://rubygems.org/
+  specs:
+    erubis (2.7.0)
+    s3sync (1.2.5)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  erubis
+  s3sync
