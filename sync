@@ -1,4 +1,4 @@
 #!/bin/bash
 
 source $(dirname $0)/s3vars.sh
-bundle exec s3sync --exclude="^ota[.].*|sync|s3vars[.]sh$" -r -p --make-dirs --progress --delete "$@" $(dirname $0)/ ota.innerfence.com:/
+bundle exec s3sync --exclude="^ota[.].*|sync|s3vars[.]sh|Gemfile.*|[.]rvmrc$" -r -p --make-dirs --progress --delete "$@" $(dirname $0)/ ota.innerfence.com:/
