@@ -3,4 +3,4 @@ source 'http://rubygems.org'
 
 gem 'erubis'
 
-gem 's3sync', :require => nil
+gem 'frahugo-s3sync', :require => nil
