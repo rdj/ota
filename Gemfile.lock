@@ -1,20 +1,25 @@
 GEM
   remote: http://rubygems.org/
   specs:
-    aws-sdk (1.32.0)
-      json (~> 1.4)
-      nokogiri (>= 1.4.4)
-      uuidtools (~> 2.1)
-    cmdparse (2.0.5)
+    aws-sdk (2.0.28)
+      aws-sdk-resources (= 2.0.28)
+    aws-sdk-core (2.0.28)
+      builder (~> 3.0)
+      jmespath (~> 1.0)
+      multi_json (~> 1.0)
+      multi_xml (~> 0.5)
+    aws-sdk-resources (2.0.28)
+      aws-sdk-core (= 2.0.28)
+    builder (3.2.2)
+    cmdparse (2.0.6)
     erubis (2.7.0)
-    json (1.7.7)
-    mini_portile (0.5.2)
-    nokogiri (1.6.1)
-      mini_portile (~> 0.5.0)
-    s3sync (2.0.0)
+    jmespath (1.0.2)
+      multi_json (~> 1.0)
+    multi_json (1.10.1)
+    multi_xml (0.5.5)
+    s3sync (2.0.2)
       aws-sdk
       cmdparse
-    uuidtools (2.1.4)
 
 PLATFORMS
   ruby
