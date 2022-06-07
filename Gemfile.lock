@@ -13,9 +13,8 @@ GEM
     builder (3.2.2)
     cmdparse (2.0.6)
     erubis (2.7.0)
-    jmespath (1.0.2)
-      multi_json (~> 1.0)
-    multi_json (1.10.1)
+    jmespath (1.6.1)
+    multi_json (1.15.0)
     multi_xml (0.5.5)
     s3sync (2.0.2)
       aws-sdk
